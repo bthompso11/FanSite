@@ -1,0 +1,36 @@
+﻿@model FanSite.Models.UserStory
+
+@{
+    ViewData["Title"] = "Submit Your Stories";
+    Layout = "_DefaultLayout";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to submit your favorite stories about Twin Peaks</p>
+
+<form asp-controller="Home" asp-action="UserStory" method="post">
+
+    <p>
+        <label asp-for="Name">Your Name: </label>
+        <input asp-for="Name" />
+    </p>
+
+    <p>
+        <label asp-for="Location">Your Location: </label>
+        <input asp-for="Location" />
+    </p>
+
+    <p>
+        <label asp-for="Title">Please title your story:</label>
+        <input asp-for="Title" />
+    </p>
+
+    <p>
+        <label asp-for="Story">Please type your story: </label>
+        <input asp-for="Story" />
+    </p>
+
+
+
+    <button type="submit">Submit Story</button>
+</form>

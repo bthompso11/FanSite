@@ -1,0 +1,27 @@
+﻿@model IEnumerable<FanSite.Models.BooksAndPrint>
+
+@{
+    ViewData["Title"] = "BooksAndPrint";
+    Layout = "_ListLayout";
+}
+
+
+<h1>BooksAndPrint</h1>
+<!--   Was trying to implement a button to facilite the sorting but it did not work. 
+<button type="submit" asp-action="BooksAndPrint" method="post">Click to Sort</button>
+    -->
+
+
+
+
+<body>
+
+    @foreach (FanSite.Models.BooksAndPrint p in Model)
+    {
+        <p>@p.Title</p>
+        <p><a href="@p.Hyperlink">@p.Hyperlink</a></p>
+        <p>@p.PublicationYear</p>
+    }
+
+</body>
+

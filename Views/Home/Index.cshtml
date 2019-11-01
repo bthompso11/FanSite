@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Testing sending data to viewbag";
+    ViewBag.Test2 = "ViewBag to layout 2";
+
+    Layout = "_DefaultLayout";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Twin Peaks</h1>
+    <p>Twin Peaks is a universe created by David Lynch</p>
+
+    <a asp-action="Stories">Click me for story submission <br /></a>
+    <a asp-action="History">Click me for a brief history <br /></a>
+    <a asp-action="Sources">Click me for place to find more information</a>
+</div>

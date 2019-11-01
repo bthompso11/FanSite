@@ -1,0 +1,20 @@
+﻿@model IEnumerable<FanSite.Models.OnlineResources>
+@{
+    ViewData["Title"] = "OnlineResources";
+    Layout = "_ListLayout";
+}
+
+<!-- Place holder text 
+     TO DO: Add online resources for user to navigate-->
+<h1>OnlineResources</h1>
+
+
+<body>
+    @foreach (FanSite.Models.OnlineResources o in Model)
+    {
+        <p>@o.Title</p>
+        <p><a href="@o.Hyperlink">@o.Hyperlink</a></p>
+    }
+
+
+</body>
